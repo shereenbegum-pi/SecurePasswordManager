@@ -1,18 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Secure Password Manager</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Secure Password Manager</h1>
-    <p>Welcome to Secure Password Manager.</p>
 
-    <a href="/login">
-    <button>Login</button>
-</a>
+<div class="hero">
 
-<a href="/register">
-    <button>Register</button>
-</a>
+    <div class="hero-left">
+
+        <h1>Secure Password Manager</h1>
+
+        <p>
+            Store all your passwords safely in one place.
+            Simple. Secure. Fast.
+        </p>
+
+        <div class="buttons">
+            <a href="/login" class="btn">Login</a>
+            <a href="/register" class="btn-outline">Register</a>
+        </div>
+
+    </div>
+
+    <div class="hero-right">
+
+        <div class="card">
+
+            <h2>Why Choose Us?</h2>
+
+            <ul>
+                <li>🔒 Secure Login System</li>
+                <li>⚡ Fast & Simple</li>
+                <li>💻 Access Anytime</li>
+                <li>📱 Mobile Friendly</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>

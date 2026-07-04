@@ -254,3 +254,95 @@ padding:15px;
 border-bottom:1px solid #eee;
 text-align:center;
 }
+/* INDEX PAGE */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100vh;
+    padding:0 8%;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h1{
+    font-size:55px;
+    color:#0B2E6F;
+    margin-bottom:20px;
+}
+
+.hero-left p{
+    font-size:20px;
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.buttons{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    background:#0B2E6F;
+    color:white;
+    padding:15px 40px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#1847a6;
+}
+
+.btn-outline{
+    border:2px solid #0B2E6F;
+    color:#0B2E6F;
+    padding:15px 40px;
+    border-radius:12px;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn-outline:hover{
+    background:#0B2E6F;
+    color:white;
+}
+
+.hero-right{
+    width:35%;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.card h2{
+    color:#0B2E6F;
+    margin-bottom:25px;
+}
+
+.card ul{
+    list-style:none;
+    padding:0;
+}
+
+.card li{
+    margin:18px 0;
+    font-size:18px;
+}
