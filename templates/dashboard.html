@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>🔐 SecureVault</h2>
+
+        <ul>
+
+            <li>🏠 Dashboard</li>
+
+            <li>🔑 Saved Passwords</li>
+
+            <li>➕ Add Password</li>
+
+            <li><a href="/logout">🚪 Logout</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main-content">
+
+        <h1>Welcome, {{ user }}</h1>
+
+        <p>Your passwords are stored securely.</p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Passwords</h3>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h3>Security Status</h3>
+                <p>Strong ✅</p>
+            </div>
+
+            <div class="card">
+                <h3>Last Login</h3>
+                <p>Today</p>
+            </div>
+        </div>
+
+        <h2>Saved Passwords</h2>
+
+        <table>
+
+            <tr>
+                <th>Website</th>
+                <th>Username</th>
+                <th>Password</th>
+            </tr>
+
+            <tr>
+                <td colspan="3">No passwords added yet.</td>
+            </tr>
+
+        </table>
+
+        <br>
+
+        <button>Add Password</button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

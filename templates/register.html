@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <div class="logo">🔐</div>
+
+        <h1>Create Account</h1>
+
+        <p>
+
+            Join SecureVault today.<br><br>
+
+            ✔ Secure Password Storage<br>
+            ✔ Encrypted Login System<br>
+            ✔ Access Anywhere
+
+        </p>
+
+    </div>
+
+    <div class="right">
+
+        <h2>Register</h2>
+
+        <p class="subtitle">
+            Create your new account
+        </p>
+
+        <form method="POST">
+
+            <label>Full Name</label>
+
+            <input
+                type="text"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                name="password"
+                placeholder="Create a password"
+                required
+            >
+
+            <label>Confirm Password</label>
+
+            <input
+                type="password"
+                name="confirm_password"
+                placeholder="Confirm your password"
+                required
+            >
+
+            <button type="submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <div class="text-center">
+            Already have an account?
+            <a href="/login">Login</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</body>
+</html>
